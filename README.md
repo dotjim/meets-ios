@@ -36,8 +36,8 @@ so you will only have to add the Meets library dependency to your project.
 
 Right now you have to follow this steps:
 
-1. Download `Meets.framework-<version number>.zip` from "Downloads" section.
-1. Unzip it and drag `Meets.framework` inside your Xcode project.
+1. Download Meets project.
+1. Drag `Meets.framework`(located in bin folder) inside your Xcode project.
 1. Add `#import <Meets/Meets/Meets.h>`to your project's `.pch` file.
 
 Meets works with several CocoaPods dependencies. Add them to your `podfile`:
@@ -76,3 +76,4 @@ This project uses the MIT license. See LICENSE.txt
 1. Add appledoc
 1. Keep on adding more Magento API use cases
 1. Build a generic SOAP Parser to get rid of all the Wsdl2Code generated code
+1. Add tests

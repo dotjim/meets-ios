@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3B2420B6-B607-48D0-898C-725B874C0F9E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Meets</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1A729993-95C0-4438-AED1-F9D4C1D9A9E8</key>
+		<string>ssh://bitbucket.org/jfsagasti/ios-meets-sdk-github-version.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Meets.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1A729993-95C0-4438-AED1-F9D4C1D9A9E8</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/jfsagasti/ios-meets-sdk-github-version.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1A729993-95C0-4438-AED1-F9D4C1D9A9E8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1A729993-95C0-4438-AED1-F9D4C1D9A9E8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS Meets SDK</string>
+		</dict>
+	</array>
+</dict>
+</plist>
