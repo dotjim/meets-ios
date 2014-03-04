@@ -36,13 +36,11 @@ so you will only have to add the Meets library dependency to your project.
 
 Right now you have to follow this steps:
 
-1. Download Meets project.
-1. Open your project's workspace and drag Meets.xcodeproj inside your project.
-1. Go to your project's target and add Meets as a new target dependency, and libMeets.a 
-1. In the "Link With Libraries" section, add libMeets.a
-1. Configure your project's "Hearder Search Paths" to the Meets SDK directory.
-1. Import "MeetsHeaders.h" file in your project's pch file.
-1. Meets works with several cocoapods dependencies:
+1. Download `Meets.framework-<version number>.zip` from "Downloads" section.
+1. Unzip it and drag `Meets.framework` inside your Xcode project.
+1. Add `#import <Meets/Meets/Meets.h>`to your project's `.pch` file.
+
+Meets works with several CocoaPods dependencies. Add them to your `podfile`:
 
         platform :ios, '7.0'
         pod 'AFNetworking', '~> 2.1.0'
