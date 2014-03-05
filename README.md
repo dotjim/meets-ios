@@ -57,7 +57,7 @@ experiences with enthusiastic decision maker and experts according the topics Ma
 
 [Meets at Meet Magento Spain.](http://es.meet-magento.com/meets/)
 
-# Open source projects that have helped Meets to come a reality
+# Open source projects that have helped Meets to become real
 
 Special thanks to people involved in the following projects. They have made easier to achieve the goals of Meets:
 
