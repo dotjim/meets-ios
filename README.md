@@ -25,7 +25,7 @@ You can learn more about Meets in the official web page, <http://meets.io/>, and
 
 > **WARNING:**
 >
->_Note that this is an beta version of Meets so it's not intended to use in production environments.
+>_Note that this is a beta version of Meets so it's not intended to use in production environments.
 >We are working hardly to have an stable version as soon as possible._
 >
 > _Also note that all data sent and retrieved to/from the server goes in plain text. If you want to use Meets to work
