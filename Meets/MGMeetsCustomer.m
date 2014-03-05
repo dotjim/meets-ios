@@ -97,6 +97,19 @@
     [createMethod runWithModels:@[address] completion:^(id responseObject, NSError *error) {
         if (!error) {
             address.objectId = @([responseObject integerValue]);
+            
+            // Update the default billing and shipping state in the other addresses
+            for (MeetsAddress *anAddress in self.addresses) {
+                if (address.isDefaultBilling && anAddress.isDefaultBilling) {
+                    anAddress.isDefaultBilling = NO;
+                }
+                
+                if (address.isDefaultShipping && anAddress.isDefaultShipping) {
+                    anAddress.isDefaultShipping = NO;
+                }
+            }
+            
+            [self.addresses addObject:address];
         }
         completion(error);
     }];
