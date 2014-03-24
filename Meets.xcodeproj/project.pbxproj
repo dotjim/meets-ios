@@ -23,7 +23,6 @@
 
 /* Begin PBXBuildFile section */
 		1C4704C418BE00880085A921 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4704C318BE00880085A921 /* Foundation.framework */; };
-		1C4704C918BE00880085A921 /* Meets.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C4704C818BE00880085A921 /* Meets.h */; };
 		1C4704CB18BE00880085A921 /* Meets.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4704CA18BE00880085A921 /* Meets.m */; };
 		1C4704D218BE00880085A921 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4704D118BE00880085A921 /* XCTest.framework */; };
 		1C4704D318BE00890085A921 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4704C318BE00880085A921 /* Foundation.framework */; };
@@ -32,6 +31,96 @@
 		1C4704DE18BE00890085A921 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C4704DC18BE00890085A921 /* InfoPlist.strings */; };
 		1C4704E018BE00890085A921 /* MeetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4704DF18BE00890085A921 /* MeetsTests.m */; };
 		1C7A8DA718C10CB80022A936 /* MeetsGenericModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A8DA618C10CB80022A936 /* MeetsGenericModel.m */; };
+		1CB6EA7618D10C6300923773 /* Meets.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C4704C818BE00880085A921 /* Meets.h */; };
+		1CB6EA7718D10C6300923773 /* MeetsRestSessionManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AB8818BE0B8100B757EB /* MeetsRestSessionManager.h */; };
+		1CB6EA7818D10C6300923773 /* MeetsSoapSessionManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AB8A18BE0B8100B757EB /* MeetsSoapSessionManager.h */; };
+		1CB6EA7918D10C6300923773 /* NSObject+Instrospection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC8018BE11D500B757EB /* NSObject+Instrospection.h */; };
+		1CB6EA7A18D10C6300923773 /* NSData+NSHash.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC9418BE171300B757EB /* NSData+NSHash.h */; };
+		1CB6EA7B18D10C6300923773 /* NSString+NSHash.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC9618BE171300B757EB /* NSString+NSHash.h */; };
+		1CB6EA7C18D10C6300923773 /* Errors.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF8C82F18C0A81F00B1C0D5 /* Errors.h */; };
+		1CB6EA7D18D10C6300923773 /* MeetsFactory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AB8E18BE0BD200B757EB /* MeetsFactory.h */; };
+		1CB6EA7E18D10C6300923773 /* MeetsGenericModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C7A8DA518C10CB80022A936 /* MeetsGenericModel.h */; };
+		1CB6EA7F18D10C6300923773 /* MeetsModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AB9018BE0BD200B757EB /* MeetsModel.h */; };
+		1CB6EA8018D10C6300923773 /* MeetsCollection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AB9218BE0BD200B757EB /* MeetsCollection.h */; };
+		1CB6EA8118D10C6300923773 /* MeetsProduct.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AB9418BE0BD200B757EB /* MeetsProduct.h */; };
+		1CB6EA8218D10C6300923773 /* MeetsCategory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AB9618BE0BD200B757EB /* MeetsCategory.h */; };
+		1CB6EA8318D10C6300923773 /* MeetsCustomer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AB9C18BE0BD200B757EB /* MeetsCustomer.h */; };
+		1CB6EA8418D10C6300923773 /* MeetsCart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AB9818BE0BD200B757EB /* MeetsCart.h */; };
+		1CB6EA8518D10C6300923773 /* MeetsCartItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AB9A18BE0BD200B757EB /* MeetsCartItem.h */; };
+		1CB6EA8618D10C6300923773 /* MeetsCartPayment.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABA218BE0BD200B757EB /* MeetsCartPayment.h */; };
+		1CB6EA8718D10C6300923773 /* MeetsCartShipping.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABA018BE0BD200B757EB /* MeetsCartShipping.h */; };
+		1CB6EA8818D10C6300923773 /* MeetsAddress.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AB9E18BE0BD200B757EB /* MeetsAddress.h */; };
+		1CB6EA8918D10C6300923773 /* MeetsStockItemList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABA418BE0BD200B757EB /* MeetsStockItemList.h */; };
+		1CB6EA8A18D10C6300923773 /* MeetsStockItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABA618BE0BD200B757EB /* MeetsStockItem.h */; };
+		1CB6EA8B18D10C6300923773 /* ApiMethod.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABB618BE0C0600B757EB /* ApiMethod.h */; };
+		1CB6EA8C18D10C6300923773 /* RestApiMethod.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABBA18BE0C2A00B757EB /* RestApiMethod.h */; };
+		1CB6EA8D18D10C6300923773 /* MGProducts.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABBC18BE0C2B00B757EB /* MGProducts.h */; };
+		1CB6EA8E18D10C6300923773 /* SoapApiMethod.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABC118BE0C5400B757EB /* SoapApiMethod.h */; };
+		1CB6EA8F18D10C6300923773 /* MGLogin.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABC318BE0C5400B757EB /* MGLogin.h */; };
+		1CB6EA9018D10C6300923773 /* MGCatalogCategory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABC518BE0C5400B757EB /* MGCatalogCategory.h */; };
+		1CB6EA9118D10C6300923773 /* MGCatalogCategoryLevel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABC718BE0C5400B757EB /* MGCatalogCategoryLevel.h */; };
+		1CB6EA9218D10C6300923773 /* MGCatalogCategoryTree.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABC918BE0C5400B757EB /* MGCatalogCategoryTree.h */; };
+		1CB6EA9318D10C6300923773 /* MGShoppingCartCreate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABCB18BE0C5400B757EB /* MGShoppingCartCreate.h */; };
+		1CB6EA9418D10C6300923773 /* MGShoppingCartProductAdd.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABCD18BE0C5400B757EB /* MGShoppingCartProductAdd.h */; };
+		1CB6EA9518D10C6300923773 /* MGShoppingCartProductRemove.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABCF18BE0C5400B757EB /* MGShoppingCartProductRemove.h */; };
+		1CB6EA9618D10C6300923773 /* MGShoppingCartProductList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABD118BE0C5400B757EB /* MGShoppingCartProductList.h */; };
+		1CB6EA9718D10C6300923773 /* MGShoppingCartCustomerSet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABD318BE0C5400B757EB /* MGShoppingCartCustomerSet.h */; };
+		1CB6EA9818D10C6300923773 /* MGShoppingCartCustomerAddresses.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABD518BE0C5400B757EB /* MGShoppingCartCustomerAddresses.h */; };
+		1CB6EA9918D10C6300923773 /* MGShoppingCartShippingList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABD718BE0C5400B757EB /* MGShoppingCartShippingList.h */; };
+		1CB6EA9A18D10C6300923773 /* MGShoppingCartShippingMethod.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABD918BE0C5400B757EB /* MGShoppingCartShippingMethod.h */; };
+		1CB6EA9B18D10C6300923773 /* MGShoppingCartPaymentMethod.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABDB18BE0C5400B757EB /* MGShoppingCartPaymentMethod.h */; };
+		1CB6EA9C18D10C6300923773 /* MGShoppingCartOrder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABDD18BE0C5400B757EB /* MGShoppingCartOrder.h */; };
+		1CB6EA9D18D10C6300923773 /* MGShoppingCartInfo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABDF18BE0C5400B757EB /* MGShoppingCartInfo.h */; };
+		1CB6EA9E18D10C6300923773 /* MGCustomerCustomerList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABE118BE0C5400B757EB /* MGCustomerCustomerList.h */; };
+		1CB6EA9F18D10C6300923773 /* MGCustomerCustomerCreate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABE318BE0C5400B757EB /* MGCustomerCustomerCreate.h */; };
+		1CB6EAA018D10C6300923773 /* MGCustomerCustomerUpdate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABE518BE0C5400B757EB /* MGCustomerCustomerUpdate.h */; };
+		1CB6EAA118D10C6300923773 /* MGCustomerAddressList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABE718BE0C5400B757EB /* MGCustomerAddressList.h */; };
+		1CB6EAA218D10C6300923773 /* MGCustomerAddressCreate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABE918BE0C5400B757EB /* MGCustomerAddressCreate.h */; };
+		1CB6EAA318D10C6300923773 /* MGCustomerAddressUpdate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABEB18BE0C5400B757EB /* MGCustomerAddressUpdate.h */; };
+		1CB6EAA418D10C6300923773 /* MGCustomerAddressDelete.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABED18BE0C5400B757EB /* MGCustomerAddressDelete.h */; };
+		1CB6EAA518D10C6300923773 /* MGCatalogProductList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABEF18BE0C5400B757EB /* MGCatalogProductList.h */; };
+		1CB6EAA618D10C6300923773 /* MGCatalogProductInfo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABF118BE0C5400B757EB /* MGCatalogProductInfo.h */; };
+		1CB6EAA718D10C6300923773 /* MGCatalogProductAttributeOptions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABF318BE0C5400B757EB /* MGCatalogProductAttributeOptions.h */; };
+		1CB6EAA818D10C6300923773 /* MGCatalogInventoryStockItemList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7ABF518BE0C5400B757EB /* MGCatalogInventoryStockItemList.h */; };
+		1CB6EAA918D10C6300923773 /* catalogCategoryTree.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC1318BE0C9100B757EB /* catalogCategoryTree.h */; };
+		1CB6EAAA18D10C6300923773 /* catalogCategoryEntityNoChildren.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC1518BE0C9100B757EB /* catalogCategoryEntityNoChildren.h */; };
+		1CB6EAAB18D10C6300923773 /* shoppingCartProductEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC1718BE0C9100B757EB /* shoppingCartProductEntity.h */; };
+		1CB6EAAC18D10C6300923773 /* catalogProductEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC1918BE0C9100B757EB /* catalogProductEntity.h */; };
+		1CB6EAAD18D10C6300923773 /* shoppingCartCustomerEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC1B18BE0C9100B757EB /* shoppingCartCustomerEntity.h */; };
+		1CB6EAAE18D10C6300923773 /* shoppingCartCustomerAddressEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC1D18BE0C9100B757EB /* shoppingCartCustomerAddressEntity.h */; };
+		1CB6EAAF18D10C6300923773 /* shoppingCartShippingMethodEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC1F18BE0C9100B757EB /* shoppingCartShippingMethodEntity.h */; };
+		1CB6EAB018D10C6300923773 /* shoppingCartPaymentMethodEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC2118BE0C9100B757EB /* shoppingCartPaymentMethodEntity.h */; };
+		1CB6EAB118D10C6300923773 /* shoppingCartInfoEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC2318BE0C9100B757EB /* shoppingCartInfoEntity.h */; };
+		1CB6EAB218D10C6300923773 /* customerCustomerEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC2518BE0C9100B757EB /* customerCustomerEntity.h */; };
+		1CB6EAB318D10C6300923773 /* customerCustomerEntityToCreate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC2718BE0C9100B757EB /* customerCustomerEntityToCreate.h */; };
+		1CB6EAB418D10C6300923773 /* filters.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC2918BE0C9100B757EB /* filters.h */; };
+		1CB6EAB518D10C6300923773 /* complexFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC2B18BE0C9100B757EB /* complexFilter.h */; };
+		1CB6EAB618D10C6300923773 /* associativeEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC2D18BE0C9100B757EB /* associativeEntity.h */; };
+		1CB6EAB718D10C6300923773 /* associativeMultiEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC2F18BE0C9100B757EB /* associativeMultiEntity.h */; };
+		1CB6EAB818D10C6300923773 /* customerAddressEntityItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC3118BE0C9100B757EB /* customerAddressEntityItem.h */; };
+		1CB6EAB918D10C6300923773 /* customerAddressEntityCreate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC3318BE0C9100B757EB /* customerAddressEntityCreate.h */; };
+		1CB6EABA18D10C6300923773 /* catalogProductReturnEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC3518BE0C9100B757EB /* catalogProductReturnEntity.h */; };
+		1CB6EABB18D10C6300923773 /* catalogProductRequestAttributes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC3718BE0C9100B757EB /* catalogProductRequestAttributes.h */; };
+		1CB6EABC18D10C6300923773 /* catalogAttributeOptionEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC3918BE0C9100B757EB /* catalogAttributeOptionEntity.h */; };
+		1CB6EABD18D10C6300923773 /* catalogInventoryStockItemEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC3B18BE0C9100B757EB /* catalogInventoryStockItemEntity.h */; };
+		1CB6EABE18D10C6300923773 /* shoppingCartAddressEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC8518BE159000B757EB /* shoppingCartAddressEntity.h */; };
+		1CB6EABF18D10C6300923773 /* shoppingCartItemEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC8818BE15A900B757EB /* shoppingCartItemEntity.h */; };
+		1CB6EAC018D10C6300923773 /* shoppingCartPaymentEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC8B18BE15C100B757EB /* shoppingCartPaymentEntity.h */; };
+		1CB6EAC118D10C6300923773 /* catalogProductTierPriceEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC8E18BE160300B757EB /* catalogProductTierPriceEntity.h */; };
+		1CB6EAC218D10C6300923773 /* catalogCategoryEntity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC9118BE16C100B757EB /* catalogCategoryEntity.h */; };
+		1CB6EAC318D10C6300923773 /* XPathQuery.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC7A18BE114900B757EB /* XPathQuery.h */; };
+		1CB6EAC418D10C6300923773 /* MGMeetsFactory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC5518BE0F9200B757EB /* MGMeetsFactory.h */; };
+		1CB6EAC518D10C6300923773 /* MGMeetsProduct.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC5718BE0F9200B757EB /* MGMeetsProduct.h */; };
+		1CB6EAC618D10C6300923773 /* MGMeetsCollection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC5918BE0F9200B757EB /* MGMeetsCollection.h */; };
+		1CB6EAC718D10C6300923773 /* MGMeetsCategory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC5B18BE0F9200B757EB /* MGMeetsCategory.h */; };
+		1CB6EAC818D10C6300923773 /* MGMeetsCart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC5D18BE0F9200B757EB /* MGMeetsCart.h */; };
+		1CB6EAC918D10C6300923773 /* MGMeetsCartItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC5F18BE0F9200B757EB /* MGMeetsCartItem.h */; };
+		1CB6EACA18D10C6300923773 /* MGMeetsCustomer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC6118BE0F9200B757EB /* MGMeetsCustomer.h */; };
+		1CB6EACB18D10C6300923773 /* MGMeetsAddress.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC6318BE0F9200B757EB /* MGMeetsAddress.h */; };
+		1CB6EACC18D10C6300923773 /* MGMeetsCartShipping.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC6518BE0F9200B757EB /* MGMeetsCartShipping.h */; };
+		1CB6EACD18D10C6300923773 /* MGMeetsCartPayment.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC6718BE0F9200B757EB /* MGMeetsCartPayment.h */; };
+		1CB6EACE18D10C6300923773 /* MGMeetsStockItemList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC6918BE0F9200B757EB /* MGMeetsStockItemList.h */; };
+		1CB6EACF18D10C6300923773 /* MGMeetsStockItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AC6B18BE0F9200B757EB /* MGMeetsStockItem.h */; };
 		1CF7AB8C18BE0B8100B757EB /* MeetsRestSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7AB8918BE0B8100B757EB /* MeetsRestSessionManager.m */; };
 		1CF7AB8D18BE0B8100B757EB /* MeetsSoapSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7AB8B18BE0B8100B757EB /* MeetsSoapSessionManager.m */; };
 		1CF7ABA818BE0BD200B757EB /* MeetsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7AB8F18BE0BD200B757EB /* MeetsFactory.m */; };
@@ -111,7 +200,6 @@
 		1CF7AC7718BE0F9200B757EB /* MGMeetsStockItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7AC6A18BE0F9200B757EB /* MGMeetsStockItemList.m */; };
 		1CF7AC7818BE0F9200B757EB /* MGMeetsStockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7AC6C18BE0F9200B757EB /* MGMeetsStockItem.m */; };
 		1CF7AC7C18BE114900B757EB /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7AC7B18BE114900B757EB /* XPathQuery.m */; };
-		1CF7AC7F18BE117D00B757EB /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF7AC7E18BE117D00B757EB /* libxml2.dylib */; };
 		1CF7AC8218BE11D500B757EB /* NSObject+Instrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7AC8118BE11D500B757EB /* NSObject+Instrospection.m */; };
 		1CF7AC8718BE159000B757EB /* shoppingCartAddressEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7AC8618BE159000B757EB /* shoppingCartAddressEntity.m */; };
 		1CF7AC8A18BE15A900B757EB /* shoppingCartItemEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7AC8918BE15A900B757EB /* shoppingCartItemEntity.m */; };
@@ -121,7 +209,6 @@
 		1CF7AC9818BE171300B757EB /* NSData+NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7AC9518BE171300B757EB /* NSData+NSHash.m */; };
 		1CF7AC9918BE171300B757EB /* NSString+NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7AC9718BE171300B757EB /* NSString+NSHash.m */; };
 		1CF8C83118C0A81F00B1C0D5 /* Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8C83018C0A81F00B1C0D5 /* Errors.m */; };
-		A52C36A9EF3645EEA04CE26F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB56A2E98E094F9BA894BD33 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,11 +231,100 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		1C4704BE18BE00880085A921 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				1C4704C918BE00880085A921 /* Meets.h in CopyFiles */,
+				1CB6EA7618D10C6300923773 /* Meets.h in CopyFiles */,
+				1CB6EA7718D10C6300923773 /* MeetsRestSessionManager.h in CopyFiles */,
+				1CB6EA7818D10C6300923773 /* MeetsSoapSessionManager.h in CopyFiles */,
+				1CB6EA7918D10C6300923773 /* NSObject+Instrospection.h in CopyFiles */,
+				1CB6EA7A18D10C6300923773 /* NSData+NSHash.h in CopyFiles */,
+				1CB6EA7B18D10C6300923773 /* NSString+NSHash.h in CopyFiles */,
+				1CB6EA7C18D10C6300923773 /* Errors.h in CopyFiles */,
+				1CB6EA7D18D10C6300923773 /* MeetsFactory.h in CopyFiles */,
+				1CB6EA7E18D10C6300923773 /* MeetsGenericModel.h in CopyFiles */,
+				1CB6EA7F18D10C6300923773 /* MeetsModel.h in CopyFiles */,
+				1CB6EA8018D10C6300923773 /* MeetsCollection.h in CopyFiles */,
+				1CB6EA8118D10C6300923773 /* MeetsProduct.h in CopyFiles */,
+				1CB6EA8218D10C6300923773 /* MeetsCategory.h in CopyFiles */,
+				1CB6EA8318D10C6300923773 /* MeetsCustomer.h in CopyFiles */,
+				1CB6EA8418D10C6300923773 /* MeetsCart.h in CopyFiles */,
+				1CB6EA8518D10C6300923773 /* MeetsCartItem.h in CopyFiles */,
+				1CB6EA8618D10C6300923773 /* MeetsCartPayment.h in CopyFiles */,
+				1CB6EA8718D10C6300923773 /* MeetsCartShipping.h in CopyFiles */,
+				1CB6EA8818D10C6300923773 /* MeetsAddress.h in CopyFiles */,
+				1CB6EA8918D10C6300923773 /* MeetsStockItemList.h in CopyFiles */,
+				1CB6EA8A18D10C6300923773 /* MeetsStockItem.h in CopyFiles */,
+				1CB6EA8B18D10C6300923773 /* ApiMethod.h in CopyFiles */,
+				1CB6EA8C18D10C6300923773 /* RestApiMethod.h in CopyFiles */,
+				1CB6EA8D18D10C6300923773 /* MGProducts.h in CopyFiles */,
+				1CB6EA8E18D10C6300923773 /* SoapApiMethod.h in CopyFiles */,
+				1CB6EA8F18D10C6300923773 /* MGLogin.h in CopyFiles */,
+				1CB6EA9018D10C6300923773 /* MGCatalogCategory.h in CopyFiles */,
+				1CB6EA9118D10C6300923773 /* MGCatalogCategoryLevel.h in CopyFiles */,
+				1CB6EA9218D10C6300923773 /* MGCatalogCategoryTree.h in CopyFiles */,
+				1CB6EA9318D10C6300923773 /* MGShoppingCartCreate.h in CopyFiles */,
+				1CB6EA9418D10C6300923773 /* MGShoppingCartProductAdd.h in CopyFiles */,
+				1CB6EA9518D10C6300923773 /* MGShoppingCartProductRemove.h in CopyFiles */,
+				1CB6EA9618D10C6300923773 /* MGShoppingCartProductList.h in CopyFiles */,
+				1CB6EA9718D10C6300923773 /* MGShoppingCartCustomerSet.h in CopyFiles */,
+				1CB6EA9818D10C6300923773 /* MGShoppingCartCustomerAddresses.h in CopyFiles */,
+				1CB6EA9918D10C6300923773 /* MGShoppingCartShippingList.h in CopyFiles */,
+				1CB6EA9A18D10C6300923773 /* MGShoppingCartShippingMethod.h in CopyFiles */,
+				1CB6EA9B18D10C6300923773 /* MGShoppingCartPaymentMethod.h in CopyFiles */,
+				1CB6EA9C18D10C6300923773 /* MGShoppingCartOrder.h in CopyFiles */,
+				1CB6EA9D18D10C6300923773 /* MGShoppingCartInfo.h in CopyFiles */,
+				1CB6EA9E18D10C6300923773 /* MGCustomerCustomerList.h in CopyFiles */,
+				1CB6EA9F18D10C6300923773 /* MGCustomerCustomerCreate.h in CopyFiles */,
+				1CB6EAA018D10C6300923773 /* MGCustomerCustomerUpdate.h in CopyFiles */,
+				1CB6EAA118D10C6300923773 /* MGCustomerAddressList.h in CopyFiles */,
+				1CB6EAA218D10C6300923773 /* MGCustomerAddressCreate.h in CopyFiles */,
+				1CB6EAA318D10C6300923773 /* MGCustomerAddressUpdate.h in CopyFiles */,
+				1CB6EAA418D10C6300923773 /* MGCustomerAddressDelete.h in CopyFiles */,
+				1CB6EAA518D10C6300923773 /* MGCatalogProductList.h in CopyFiles */,
+				1CB6EAA618D10C6300923773 /* MGCatalogProductInfo.h in CopyFiles */,
+				1CB6EAA718D10C6300923773 /* MGCatalogProductAttributeOptions.h in CopyFiles */,
+				1CB6EAA818D10C6300923773 /* MGCatalogInventoryStockItemList.h in CopyFiles */,
+				1CB6EAA918D10C6300923773 /* catalogCategoryTree.h in CopyFiles */,
+				1CB6EAAA18D10C6300923773 /* catalogCategoryEntityNoChildren.h in CopyFiles */,
+				1CB6EAAB18D10C6300923773 /* shoppingCartProductEntity.h in CopyFiles */,
+				1CB6EAAC18D10C6300923773 /* catalogProductEntity.h in CopyFiles */,
+				1CB6EAAD18D10C6300923773 /* shoppingCartCustomerEntity.h in CopyFiles */,
+				1CB6EAAE18D10C6300923773 /* shoppingCartCustomerAddressEntity.h in CopyFiles */,
+				1CB6EAAF18D10C6300923773 /* shoppingCartShippingMethodEntity.h in CopyFiles */,
+				1CB6EAB018D10C6300923773 /* shoppingCartPaymentMethodEntity.h in CopyFiles */,
+				1CB6EAB118D10C6300923773 /* shoppingCartInfoEntity.h in CopyFiles */,
+				1CB6EAB218D10C6300923773 /* customerCustomerEntity.h in CopyFiles */,
+				1CB6EAB318D10C6300923773 /* customerCustomerEntityToCreate.h in CopyFiles */,
+				1CB6EAB418D10C6300923773 /* filters.h in CopyFiles */,
+				1CB6EAB518D10C6300923773 /* complexFilter.h in CopyFiles */,
+				1CB6EAB618D10C6300923773 /* associativeEntity.h in CopyFiles */,
+				1CB6EAB718D10C6300923773 /* associativeMultiEntity.h in CopyFiles */,
+				1CB6EAB818D10C6300923773 /* customerAddressEntityItem.h in CopyFiles */,
+				1CB6EAB918D10C6300923773 /* customerAddressEntityCreate.h in CopyFiles */,
+				1CB6EABA18D10C6300923773 /* catalogProductReturnEntity.h in CopyFiles */,
+				1CB6EABB18D10C6300923773 /* catalogProductRequestAttributes.h in CopyFiles */,
+				1CB6EABC18D10C6300923773 /* catalogAttributeOptionEntity.h in CopyFiles */,
+				1CB6EABD18D10C6300923773 /* catalogInventoryStockItemEntity.h in CopyFiles */,
+				1CB6EABE18D10C6300923773 /* shoppingCartAddressEntity.h in CopyFiles */,
+				1CB6EABF18D10C6300923773 /* shoppingCartItemEntity.h in CopyFiles */,
+				1CB6EAC018D10C6300923773 /* shoppingCartPaymentEntity.h in CopyFiles */,
+				1CB6EAC118D10C6300923773 /* catalogProductTierPriceEntity.h in CopyFiles */,
+				1CB6EAC218D10C6300923773 /* catalogCategoryEntity.h in CopyFiles */,
+				1CB6EAC318D10C6300923773 /* XPathQuery.h in CopyFiles */,
+				1CB6EAC418D10C6300923773 /* MGMeetsFactory.h in CopyFiles */,
+				1CB6EAC518D10C6300923773 /* MGMeetsProduct.h in CopyFiles */,
+				1CB6EAC618D10C6300923773 /* MGMeetsCollection.h in CopyFiles */,
+				1CB6EAC718D10C6300923773 /* MGMeetsCategory.h in CopyFiles */,
+				1CB6EAC818D10C6300923773 /* MGMeetsCart.h in CopyFiles */,
+				1CB6EAC918D10C6300923773 /* MGMeetsCartItem.h in CopyFiles */,
+				1CB6EACA18D10C6300923773 /* MGMeetsCustomer.h in CopyFiles */,
+				1CB6EACB18D10C6300923773 /* MGMeetsAddress.h in CopyFiles */,
+				1CB6EACC18D10C6300923773 /* MGMeetsCartShipping.h in CopyFiles */,
+				1CB6EACD18D10C6300923773 /* MGMeetsCartPayment.h in CopyFiles */,
+				1CB6EACE18D10C6300923773 /* MGMeetsStockItemList.h in CopyFiles */,
+				1CB6EACF18D10C6300923773 /* MGMeetsStockItem.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,9 +530,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CF7AC7F18BE117D00B757EB /* libxml2.dylib in Frameworks */,
 				1C4704C418BE00880085A921 /* Foundation.framework in Frameworks */,
-				A52C36A9EF3645EEA04CE26F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +696,10 @@
 				1CF7ABC818BE0C5400B757EB /* MGCatalogCategoryLevel.m */,
 				1CF7ABC918BE0C5400B757EB /* MGCatalogCategoryTree.h */,
 				1CF7ABCA18BE0C5400B757EB /* MGCatalogCategoryTree.m */,
+				1CF7ABEF18BE0C5400B757EB /* MGCatalogProductList.h */,
+				1CF7ABF018BE0C5400B757EB /* MGCatalogProductList.m */,
+				1CF7ABF118BE0C5400B757EB /* MGCatalogProductInfo.h */,
+				1CF7ABF218BE0C5400B757EB /* MGCatalogProductInfo.m */,
 				1CF7ABCB18BE0C5400B757EB /* MGShoppingCartCreate.h */,
 				1CF7ABCC18BE0C5400B757EB /* MGShoppingCartCreate.m */,
 				1CF7ABCD18BE0C5400B757EB /* MGShoppingCartProductAdd.h */,
@@ -558,10 +736,6 @@
 				1CF7ABEC18BE0C5400B757EB /* MGCustomerAddressUpdate.m */,
 				1CF7ABED18BE0C5400B757EB /* MGCustomerAddressDelete.h */,
 				1CF7ABEE18BE0C5400B757EB /* MGCustomerAddressDelete.m */,
-				1CF7ABEF18BE0C5400B757EB /* MGCatalogProductList.h */,
-				1CF7ABF018BE0C5400B757EB /* MGCatalogProductList.m */,
-				1CF7ABF118BE0C5400B757EB /* MGCatalogProductInfo.h */,
-				1CF7ABF218BE0C5400B757EB /* MGCatalogProductInfo.m */,
 				1CF7ABF318BE0C5400B757EB /* MGCatalogProductAttributeOptions.h */,
 				1CF7ABF418BE0C5400B757EB /* MGCatalogProductAttributeOptions.m */,
 				1CF7ABF518BE0C5400B757EB /* MGCatalogInventoryStockItemList.h */,
@@ -1132,6 +1306,7 @@
 		1CA02AF218BE35CD00022BF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1139,6 +1314,7 @@
 		1CA02AF318BE35CD00022BF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

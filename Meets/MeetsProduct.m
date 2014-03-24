@@ -18,8 +18,8 @@
 }
 
 
-- (void)fetchAdditionalAttributes:(NSDictionary *)attributes
-                       completion:(MeetsCompletion)completion
+- (void)fetchWithAdditionalAttributes:(NSArray *)attributes
+                           completion:(MeetsCompletion)completion
 {
     @throw [Errors overrideException:NSStringFromSelector(_cmd)];
 }

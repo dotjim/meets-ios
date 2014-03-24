@@ -52,7 +52,7 @@ static  MeetsRestSessionManager *shared = nil;
 //        
 //        NSString *interPath = [[NSBundle mainBundle] pathForResource:@"gd_intermediate.crt" ofType:@"der"];
 //        NSData *interData = [NSData dataWithContentsOfFile:interPath];
-
+//
 //        AFSecurityPolicy *securityPolicy = [[AFSecurityPolicy alloc] init];
 //        [securityPolicy setAllowInvalidCertificates:NO];
 //        [securityPolicy setPinnedCertificates:@[certData, rootData, interData]];

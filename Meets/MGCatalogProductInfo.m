@@ -42,13 +42,13 @@
 
 - (id)mapResponseToModelObjectWithResponse:(id)responseObject
 {
-    MGMeetsProduct *productModel = nil;
+    MeetsProduct *productModel = nil;
     
     if (responseObject)
     {
         catalogProductReturnEntity *productEntity = responseObject;
         
-        productModel = [[MGMeetsProduct alloc] initWithId:@(productEntity.product_id.integerValue)];
+        productModel = [[MeetsFactory shared] makeProductWithId:@(productEntity.product_id.integerValue)];
         productModel.type = productEntity.type_id;
         productModel.sku = productEntity.sku;
         productModel.name = productEntity.name;

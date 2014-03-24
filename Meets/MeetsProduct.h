@@ -16,7 +16,7 @@
 @property (nonatomic, strong) NSString *description;
 @property (nonatomic, strong) NSNumber *price;
 @property (nonatomic, strong) NSString *imageURL;
-@property (nonatomic, strong) NSDictionary *imageVersions;
+@property (nonatomic, strong) NSDictionary *images;
 
 /**
  *  Dictionary of type @{NSString: NSString}
@@ -28,8 +28,8 @@
 
 - (void)fetchAssociatedProductsWithCompletion:(MeetsCompletion)completion;
 
-- (void)fetchAdditionalAttributes:(NSDictionary *)attributes
-                       completion:(MeetsCompletion)completion;
+- (void)fetchWithAdditionalAttributes:(NSArray *)attributes
+                           completion:(MeetsCompletion)completion;
 
 - (void)fetchImageVersionsWithCompletion:(MeetsCompletion)completion;
 

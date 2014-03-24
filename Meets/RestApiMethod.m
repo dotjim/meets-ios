@@ -52,7 +52,7 @@
     NSString *finalURL = [self requestFinalURLWithParams:paramsArray filters:filters];
     NSURL *url = [NSURL URLWithString:finalURL];
     
-    //NSLog(@"FINAL URL = %@", url.absoluteURL);
+    // NSLog(@"FINAL URL = %@", url.absoluteURL);
     [manager GET:url.absoluteString parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         completion([self getModelFromResponse:responseObject], nil);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {

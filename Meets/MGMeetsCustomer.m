@@ -22,6 +22,7 @@
     return self;
 }
 
+
 - (void)fetchByEmail:(NSString *)email
           completion:(MeetsCompletion)completion
 {
@@ -44,7 +45,8 @@
         }
 
         completion(error);
-    }];}
+    }];
+}
 
 
 - (BOOL)checkPassword:(NSString *)password

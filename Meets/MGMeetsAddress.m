@@ -20,7 +20,8 @@
                                     userInfo:[NSDictionary dictionaryWithObject:@"Could not update the address" forKey:NSLocalizedDescriptionKey]];
         }
         
-        completion(error);    }];
+        completion(error);
+    }];
 }
 
 

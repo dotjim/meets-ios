@@ -31,6 +31,8 @@
 - (void)fillWithModel:(id)modelObject
 {
     for (NSString *aProperty in [self classProperties]) {
+//        if ([self respondsToSelector:NSSelectorFromString(aProperty)]) {
+//        }
         [self setValue:[modelObject valueForKey:aProperty] forKey:aProperty];
     }
 }
