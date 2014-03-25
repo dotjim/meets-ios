@@ -14,7 +14,7 @@
 @property (nonatomic, strong) NSMutableArray *shippingMethods;
 @property (nonatomic, strong) NSMutableArray *paymentMethods;
 @property (nonatomic, strong) NSNumber *itemsTotalQuantity;
-@property (nonatomic, strong) NSNumber *total, *subtotal; // Grand total is total
+@property (nonatomic, strong) NSNumber *total, *subtotal;
 @property (nonatomic, strong) NSString *orderId;
 
 

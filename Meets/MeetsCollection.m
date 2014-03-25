@@ -16,7 +16,7 @@
     self = [super init];
     if (self)
     {
-        _apiMethod = method;
+        _apiMethod = NSStringFromClass(method);
         self.collection = [NSMutableArray array];
         self.page = @(0);
         self.pageSize = @(50); // Default
@@ -28,7 +28,7 @@
 - (void)reset
 {
     self.filters = nil;
-    self.page = @(0);
+    self.page = @(1);
     [self.collection removeAllObjects];
 }
 

@@ -12,7 +12,7 @@
 
 - (void)fetchWithCompletion:(MeetsCompletion)completion
 {
-    ApiMethod *method = [self.apiMethod new];
+    ApiMethod *method = [NSClassFromString(self.apiMethod) new];
     
     if ([method isKindOfClass:[RestApiMethod class]])
     {

@@ -33,8 +33,9 @@ static  MeetsRestSessionManager *shared = nil;
 //                                                          diskCapacity:50 * 1024 * 1024
 //                                                              diskPath:nil];
 //        [sessionConfiguration setURLCache:cache];
-//        sessionConfiguration.requestCachePolicy = NSURLRequestReturnCacheDataElseLoad;
+//        sessionConfiguration.requestCachePolicy = NSURLRequestReloadRevalidatingCacheData;
 
+        
         shared = [[MeetsRestSessionManager alloc] initWithBaseURL:[NSURL URLWithString:baseUrl] sessionConfiguration:sessionConfiguration];
         shared.storeId = storeId;
         shared.websiteId = websiteId;

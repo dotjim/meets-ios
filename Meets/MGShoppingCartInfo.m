@@ -43,11 +43,15 @@
     shoppingCartInfoEntity *infoEntity = responseObject;
     MGMeetsCart *cartModel = [[MGMeetsCart alloc] initWithId:@(infoEntity.quote_id)];
     cartModel.subtotal = @(infoEntity.subtotal);
+    cartModel.total = @(infoEntity.grand_total.doubleValue);
     
     for (shoppingCartItemEntity *itemEntity in infoEntity.items)
     {
         MGMeetsCartItem *cartItem = [MGMeetsCartItem new];
         cartItem.productId = @(itemEntity.product_id.integerValue);
+        cartItem.productSku = itemEntity.sku;
+        cartItem.name = itemEntity.name;
+        cartItem.description = itemEntity.description;
         cartItem.quantity = @(itemEntity.qty);
         cartItem.relatedProduct = nil;
         cartItem.price = @(itemEntity.price);

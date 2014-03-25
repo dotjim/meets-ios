@@ -53,7 +53,7 @@
     NSMutableArray *items = [NSMutableArray array];
     for (customerAddressEntityItem *addressItem in responseObject)
     {
-        MGMeetsAddress *addressModel = [MGMeetsAddress new];
+        MeetsAddress *addressModel = [[MeetsFactory shared] makeAddress];
         
         addressModel.objectId = @(addressItem.customer_address_id);
         addressModel.firstName = addressItem.firstname;
@@ -71,10 +71,10 @@
         addressModel.fax = addressItem.fax;
         
         if (addressItem.is_default_billing) {
-            addressModel.mode = kAddressModeTypeBilling;
+            [(MGMeetsAddress *)addressModel setMode:kAddressModeTypeBilling];
         }
         else {
-            addressModel.mode = kAddressModeTypeShipping;
+            [(MGMeetsAddress *)addressModel setMode:kAddressModeTypeShipping];
         }
         
         [items addObject:addressModel];

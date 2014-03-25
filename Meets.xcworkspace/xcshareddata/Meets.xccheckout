@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3B2420B6-B607-48D0-898C-725B874C0F9E</string>
+	<string>CD7D925C-7A37-4DCE-9A2E-157BC1CC8447</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Meets</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1A729993-95C0-4438-AED1-F9D4C1D9A9E8</key>
-		<string>ssh://bitbucket.org/jfsagasti/ios-meets-sdk-github-version.git</string>
+		<key>B7F0CAB1-D7FF-415A-8913-5394038D2F5F</key>
+		<string>ssh://github.com/agilemonkeys/meets-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Meets.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1A729993-95C0-4438-AED1-F9D4C1D9A9E8</key>
+		<key>B7F0CAB1-D7FF-415A-8913-5394038D2F5F</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://bitbucket.org/jfsagasti/ios-meets-sdk-github-version.git</string>
+	<string>ssh://github.com/agilemonkeys/meets-ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1A729993-95C0-4438-AED1-F9D4C1D9A9E8</string>
+	<string>B7F0CAB1-D7FF-415A-8913-5394038D2F5F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1A729993-95C0-4438-AED1-F9D4C1D9A9E8</string>
+			<string>B7F0CAB1-D7FF-415A-8913-5394038D2F5F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iOS Meets SDK</string>
 		</dict>
