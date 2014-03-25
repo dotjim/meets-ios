@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSNumber *pageSize;
 @property (nonatomic, strong) NSNumber *resetOnFetch;
 
-@property (nonatomic, readonly) Class apiMethod;
+@property (nonatomic, strong, readonly) NSString *apiMethod;
 
 - (instancetype)initWithApiMethodClass:(Class)method;
 
