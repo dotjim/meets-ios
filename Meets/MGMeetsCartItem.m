@@ -17,6 +17,8 @@
     {
         self.productId = aProduct.objectId;
         self.productSku = aProduct.sku;
+        self.name = aProduct.name;
+        self.description = aProduct.description;
         self.quantity = @(1);
         self.relatedProduct = aProduct;
         self.price = aProduct.price;

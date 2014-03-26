@@ -93,28 +93,90 @@
 }
 
 
-- (void)attachAddress:(MeetsAddress *)address completion:(MeetsCompletion)completion
+- (void)saveAddress:(MeetsAddress *)address
+         completion:(MeetsCompletion)completion
 {
-    MGCustomerAddressCreate *createMethod = [[MGCustomerAddressCreate alloc] initWithCustomerId:self.objectId];
-    [createMethod runWithModels:@[address] completion:^(id responseObject, NSError *error) {
-        if (!error) {
-            address.objectId = @([responseObject integerValue]);
-            
-            // Update the default billing and shipping state in the other addresses
-            for (MeetsAddress *anAddress in self.addresses) {
-                if (address.isDefaultBilling && anAddress.isDefaultBilling) {
-                    anAddress.isDefaultBilling = NO;
+    MeetsAddress *addressToSend = [self addressWithId:address.objectId];
+    
+    if (addressToSend) { // Update-else-create
+        MGCustomerAddressUpdate *updateMethod = [MGCustomerAddressUpdate new];
+        [updateMethod runWithModels:@[address] completion:^(id responseObject, NSError *error) {
+            if (!error) {
+                if ([responseObject boolValue]) {
+                    [addressToSend fillWithModel:address];
+                    [self updateBillingsAndShippingsWithAddress:address];
                 }
-                
-                if (address.isDefaultShipping && anAddress.isDefaultShipping) {
-                    anAddress.isDefaultShipping = NO;
+                else {
+                    error = [NSError errorWithDomain:@"MagentoErrorDomain"
+                                                code:0
+                                            userInfo:[NSDictionary dictionaryWithObject:@"Could not update the address" forKey:NSLocalizedDescriptionKey]];
                 }
             }
             
-            [self.addresses addObject:address];
+            completion(error);
+        }];
+    }
+    else {
+        MGCustomerAddressCreate *createMethod = [[MGCustomerAddressCreate alloc] initWithCustomerId:self.objectId];
+        [createMethod runWithModels:@[address] completion:^(id responseObject, NSError *error) {
+            if (!error) {
+                [self updateBillingsAndShippingsWithAddress:address];
+                address.objectId = @([responseObject integerValue]);
+                [self.addresses addObject:address];
+            }
+            completion(error);
+        }];
+    }
+}
+
+
+- (void)removeAddressWithId:(NSNumber *)addressId
+                 completion:(MeetsCompletion)completion
+{
+    MGCustomerAddressDelete *deleteMethod = [MGCustomerAddressDelete new];
+    [deleteMethod runWithModels:@[addressId] completion:^(id responseObject, NSError *error) {
+        if (!error) {
+            if ([responseObject boolValue]) {
+                [self.addresses removeObject:[self addressWithId:addressId]];
+            }
+            else {
+                error = [NSError errorWithDomain:@"MagentoErrorDomain"
+                                            code:0
+                                        userInfo:[NSDictionary dictionaryWithObject:@"Could not remove the address" forKey:NSLocalizedDescriptionKey]];
+            }
         }
+        
         completion(error);
     }];
+}
+
+
+#pragma mark - Private methods
+
+- (void)updateBillingsAndShippingsWithAddress:(MeetsAddress *)address
+{
+    // Update the default billing and shipping state in the other addresses
+    for (MeetsAddress *anAddress in self.addresses) {
+        if (address.isDefaultBilling.boolValue && anAddress.isDefaultBilling.boolValue && (![address.objectId isEqual:anAddress.objectId])) {
+            anAddress.isDefaultBilling = @NO;
+        }
+        
+        if (address.isDefaultShipping.boolValue && anAddress.isDefaultShipping.boolValue && (![address.objectId isEqual:anAddress.objectId])) {
+            anAddress.isDefaultShipping = @NO;
+        }
+    }
+}
+
+- (MeetsAddress *)addressWithId:(NSNumber *)addressId
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"objectId == %@", addressId];
+    NSArray *filteredArray = [self.addresses filteredArrayUsingPredicate:predicate];
+    
+    if ([filteredArray count] > 0) {
+        return filteredArray[0];
+    }
+    
+    return nil;
 }
 
 
