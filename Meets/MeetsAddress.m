@@ -10,15 +10,4 @@
 
 @implementation MeetsAddress
 
-- (void)saveWithCompletion:(MeetsCompletion)completion
-{
-    @throw [Errors overrideException:NSStringFromSelector(_cmd)];
-}
-
-
-- (void)removeWithCompletion:(MeetsCompletion)completion
-{
-    @throw [Errors overrideException:NSStringFromSelector(_cmd)];
-}
-
 @end

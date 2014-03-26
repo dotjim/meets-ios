@@ -28,7 +28,10 @@
 
 - (void)fetchAddressesWithCompletion:(MeetsCompletion)completion;
 
-- (void)attachAddress:(MeetsAddress *)address
-        completion:(MeetsCompletion)completion;
+- (void)saveAddress:(MeetsAddress *)address
+         completion:(MeetsCompletion)completion;
+
+- (void)removeAddressWithId:(NSNumber *)addressId
+                 completion:(MeetsCompletion)completion;
 
 @end

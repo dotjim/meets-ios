@@ -24,8 +24,4 @@
 @property (nonatomic, strong) NSString *company;
 @property (nonatomic, strong) NSString *fax;
 
-- (void)saveWithCompletion:(MeetsCompletion)completion;
-
-- (void)removeWithCompletion:(MeetsCompletion)completion;
-
 @end

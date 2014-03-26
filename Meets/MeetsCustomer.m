@@ -35,8 +35,15 @@
 }
 
 
-- (void)attachAddress:(MeetsAddress *)address
-        completion:(MeetsCompletion)completion
+- (void)saveAddress:(MeetsAddress *)address
+         completion:(MeetsCompletion)completion
+{
+    @throw [Errors overrideException:NSStringFromSelector(_cmd)];
+}
+
+
+- (void)removeAddressWithId:(NSNumber *)addressId
+                 completion:(MeetsCompletion)completion
 {
     @throw [Errors overrideException:NSStringFromSelector(_cmd)];
 }

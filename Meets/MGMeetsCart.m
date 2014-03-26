@@ -302,7 +302,7 @@
 }
 
 
-#pragma mark - Utils
+#pragma mark - Private methods
 
 - (MeetsCartItem *)itemWithProductId:(NSNumber *)productId
 {
