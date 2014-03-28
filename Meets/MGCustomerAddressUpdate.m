@@ -36,7 +36,7 @@
         addressEntity.street = (NSMutableArray *)@[addressModel.street];
         addressEntity.country_id = addressModel.countryId;
         addressEntity.region = addressModel.region;
-        addressEntity.region_id = addressModel.regionId.integerValue;
+        addressEntity.region_id = addressModel.regionId.intValue;
         addressEntity.city = addressModel.city;
         addressEntity.postcode = addressModel.postCode;
         addressEntity.is_default_billingSpecified =

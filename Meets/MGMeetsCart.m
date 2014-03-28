@@ -139,11 +139,17 @@
                      completion:(MeetsCompletion)completion
 {
     MeetsCartItem *filteredItem = [self itemWithProductId:productId];
-    [self removeItemsWithProductIds:@[filteredItem.productId]
-                         quantities:@[filteredItem.quantity]
-                         completion:^(NSError *error) {
-        completion(error);
-    }];
+    
+    if (filteredItem) {
+        [self removeItemsWithProductIds:@[filteredItem.productId]
+                             quantities:@[filteredItem.quantity]
+                             completion:^(NSError *error) {
+                                 completion(error);
+                             }];
+    }
+    else {
+        completion(nil);
+    }
 }
 
 
@@ -152,11 +158,17 @@
                      completion:(MeetsCompletion)completion
 {
     MeetsCartItem *filteredItem = [self itemWithProductId:productId];
-    [self removeItemsWithProductIds:@[filteredItem.productId]
-                         quantities:@[quantity]
-                         completion:^(NSError *error) {
-        completion(error);
-    }];
+    
+    if (filteredItem) {
+        [self removeItemsWithProductIds:@[filteredItem.productId]
+                             quantities:@[quantity]
+                             completion:^(NSError *error) {
+                                 completion(error);
+                             }];
+    }
+    else {
+        completion(nil);
+    }
 }
 
 

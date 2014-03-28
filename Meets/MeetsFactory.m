@@ -15,7 +15,7 @@
 
 static MeetsFactory *shared = nil;
 
-+ (instancetype)shared
++ (MeetsFactory *)shared
 {
     return shared;
 }

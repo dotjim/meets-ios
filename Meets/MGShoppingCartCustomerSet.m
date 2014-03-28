@@ -54,7 +54,7 @@
     {
         shoppingCartCustomerEntity *customerEntity = [shoppingCartCustomerEntity new];
         customerEntity.mode = aCustomer.objectId ? MGCustomerModeCustomer : MGCustomerModeGuest;
-        customerEntity.customer_id = aCustomer.objectId.integerValue;
+        customerEntity.customer_id = aCustomer.objectId.intValue;
         customerEntity.email = aCustomer.email;
         customerEntity.firstname = aCustomer.firstName;
         customerEntity.lastname = aCustomer.lastName;

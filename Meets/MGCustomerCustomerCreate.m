@@ -50,9 +50,9 @@
         soapEntity.lastname = theCustomer.lastName;
         soapEntity.password = theCustomer.password;
         soapEntity.taxvat = theCustomer.vatNumber;
-        soapEntity.store_id = [MeetsRestSessionManager sharedManager].storeId.integerValue;
+        soapEntity.store_id = [MeetsRestSessionManager sharedManager].storeId.intValue;
         soapEntity.store_idSpecified = YES;
-        soapEntity.website_id = [MeetsRestSessionManager sharedManager].websiteId.integerValue;
+        soapEntity.website_id = [MeetsRestSessionManager sharedManager].websiteId.intValue;
         soapEntity.website_idSpecified = YES;
         [xml appendString:[soapEntity toString:NO]];
         break; // Will only pick one.
