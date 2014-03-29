@@ -10,7 +10,7 @@
 
 @implementation MGMeetsCartItem
 
-- (id)initWithProduct:(MGMeetsProduct *)aProduct
+- (instancetype)initWithProduct:(MGMeetsProduct *)aProduct
 {
     self = [super init];
     if (self)

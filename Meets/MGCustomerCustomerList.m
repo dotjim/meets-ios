@@ -8,13 +8,13 @@
 
 @implementation MGCustomerCustomerList
 
-- (id)init
+- (instancetype)init
 {
     self = [super init];
-    if (self)
-    {
+    if (self) {
         self.methodName = @"customerCustomerList";
     }
+    
     return self;
 }
 

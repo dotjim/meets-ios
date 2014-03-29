@@ -31,6 +31,8 @@
 		1C4704DE18BE00890085A921 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C4704DC18BE00890085A921 /* InfoPlist.strings */; };
 		1C4704E018BE00890085A921 /* MeetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4704DF18BE00890085A921 /* MeetsTests.m */; };
 		1C7A8DA718C10CB80022A936 /* MeetsGenericModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A8DA618C10CB80022A936 /* MeetsGenericModel.m */; };
+		1CA3ACF018E5B44B00046319 /* MGCustomerCustomerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3ACEF18E5B44B00046319 /* MGCustomerCustomerInfo.m */; };
+		1CA3ACF118E5B49700046319 /* MGCustomerCustomerInfo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CA3ACEE18E5B44B00046319 /* MGCustomerCustomerInfo.h */; };
 		1CB6EA7618D10C6300923773 /* Meets.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C4704C818BE00880085A921 /* Meets.h */; };
 		1CB6EA7718D10C6300923773 /* MeetsRestSessionManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AB8818BE0B8100B757EB /* MeetsRestSessionManager.h */; };
 		1CB6EA7818D10C6300923773 /* MeetsSoapSessionManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CF7AB8A18BE0B8100B757EB /* MeetsSoapSessionManager.h */; };
@@ -235,6 +237,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				1CA3ACF118E5B49700046319 /* MGCustomerCustomerInfo.h in CopyFiles */,
 				1CB6EA7618D10C6300923773 /* Meets.h in CopyFiles */,
 				1CB6EA7718D10C6300923773 /* MeetsRestSessionManager.h in CopyFiles */,
 				1CB6EA7818D10C6300923773 /* MeetsSoapSessionManager.h in CopyFiles */,
@@ -345,6 +348,8 @@
 		1C4704DF18BE00890085A921 /* MeetsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetsTests.m; sourceTree = "<group>"; };
 		1C7A8DA518C10CB80022A936 /* MeetsGenericModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetsGenericModel.h; sourceTree = "<group>"; };
 		1C7A8DA618C10CB80022A936 /* MeetsGenericModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetsGenericModel.m; sourceTree = "<group>"; };
+		1CA3ACEE18E5B44B00046319 /* MGCustomerCustomerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCustomerCustomerInfo.h; sourceTree = "<group>"; };
+		1CA3ACEF18E5B44B00046319 /* MGCustomerCustomerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCustomerCustomerInfo.m; sourceTree = "<group>"; };
 		1CF7AB8818BE0B8100B757EB /* MeetsRestSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetsRestSessionManager.h; sourceTree = "<group>"; };
 		1CF7AB8918BE0B8100B757EB /* MeetsRestSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetsRestSessionManager.m; sourceTree = "<group>"; };
 		1CF7AB8A18BE0B8100B757EB /* MeetsSoapSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetsSoapSessionManager.h; sourceTree = "<group>"; };
@@ -724,6 +729,8 @@
 				1CF7ABE018BE0C5400B757EB /* MGShoppingCartInfo.m */,
 				1CF7ABE118BE0C5400B757EB /* MGCustomerCustomerList.h */,
 				1CF7ABE218BE0C5400B757EB /* MGCustomerCustomerList.m */,
+				1CA3ACEE18E5B44B00046319 /* MGCustomerCustomerInfo.h */,
+				1CA3ACEF18E5B44B00046319 /* MGCustomerCustomerInfo.m */,
 				1CF7ABE318BE0C5400B757EB /* MGCustomerCustomerCreate.h */,
 				1CF7ABE418BE0C5400B757EB /* MGCustomerCustomerCreate.m */,
 				1CF7ABE518BE0C5400B757EB /* MGCustomerCustomerUpdate.h */,
@@ -1045,6 +1052,7 @@
 				1CF7AC9018BE160300B757EB /* catalogProductTierPriceEntity.m in Sources */,
 				1CF7AC0C18BE0C5400B757EB /* MGCustomerAddressUpdate.m in Sources */,
 				1CF7AC7118BE0F9200B757EB /* MGMeetsCart.m in Sources */,
+				1CA3ACF018E5B44B00046319 /* MGCustomerCustomerInfo.m in Sources */,
 				1CF7AC5018BE0C9100B757EB /* catalogAttributeOptionEntity.m in Sources */,
 				1CF7AC3F18BE0C9100B757EB /* shoppingCartProductEntity.m in Sources */,
 				1CF7AC0E18BE0C5400B757EB /* MGCatalogProductList.m in Sources */,
@@ -1230,6 +1238,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include;
+				SHARED_PRECOMPS_DIR = "$(CACHE_ROOT)/SharedPrecompiledHeaders";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
 				VALID_ARCHS = "armv7 armv7s arm64 i386";
@@ -1257,6 +1266,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include;
+				SHARED_PRECOMPS_DIR = "$(CACHE_ROOT)/SharedPrecompiledHeaders";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
 				VALID_ARCHS = "armv7 armv7s arm64 i386";
@@ -1305,6 +1315,7 @@
 				DEPLOYMENT_LOCATION = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "$(CACHE_ROOT)/SharedPrecompiledHeaders";
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = "arm64 armv7 armv7s i386";
@@ -1317,6 +1328,7 @@
 				DEPLOYMENT_LOCATION = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "$(CACHE_ROOT)/SharedPrecompiledHeaders";
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = "arm64 armv7 armv7s i386";

@@ -47,10 +47,9 @@
 
 
 - (id)mapResponseToModelObjectWithResponse:(id)responseObject
-{
-    if ([responseObject count] == 0) return nil;
-    
+{    
     NSMutableArray *items = [NSMutableArray array];
+    
     for (customerAddressEntityItem *addressItem in responseObject)
     {
         MeetsAddress *addressModel = [[MeetsFactory shared] makeAddress];
@@ -79,6 +78,7 @@
         
         [items addObject:addressModel];
     }
+    
     return items;
 }
 

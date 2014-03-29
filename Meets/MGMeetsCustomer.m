@@ -11,7 +11,7 @@
 
 @implementation MGMeetsCustomer
 
-- (id)initWithId:(NSNumber *)customerId
+- (instancetype)initWithId:(NSNumber *)customerId
 {
     self = [super init];
     if (self)
@@ -20,6 +20,19 @@
         self.type = @"customer";
     }
     return self;
+}
+
+
+- (void)fetchWithCompletion:(MeetsCompletion)completion
+{
+    MGCustomerCustomerInfo *infoMethod = [MGCustomerCustomerInfo new];
+    [infoMethod runWithParams:@{@"customerId": self.objectId} filters:nil completion:^(id responseObject, NSError *error) {
+        if (!error) {
+            [self fillWithModel:responseObject];
+        }
+        
+        completion(error);
+    }];
 }
 
 

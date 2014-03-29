@@ -52,6 +52,7 @@
         {
             id response = [self getModelFromResponse:operation.responseString];
             
+            // NSLog(@"RESPONSE = %@", operation.responseString);
             if (![response isKindOfClass:[NSError class]])
                 completion(response, nil);
             else
@@ -99,7 +100,7 @@
 
 - (NSError *)emptyResponseError
 {
-    return [NSError errorWithDomain:@"" code:0 userInfo:@{NSLocalizedDescriptionKey: @"Response is nil."}];
+    return [NSError errorWithDomain:@"" code:0 userInfo:@{NSLocalizedDescriptionKey: @"Response is nil"}];
 }
 
 
@@ -126,7 +127,7 @@
     [params appendFormat:@"</%@>", path];
     [params appendString:@"</soap:Body></soap:Envelope>"];
     
-    //NSLog(@"ENVELOPE = %@", params);
+    // NSLog(@"ENVELOPE = %@", params);
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:manager.baseURL.absoluteString]];
     NSString *messageLen = [NSString stringWithFormat:@"%lu", (unsigned long)[params length]];

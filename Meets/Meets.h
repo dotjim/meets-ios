@@ -65,6 +65,7 @@ typedef void(^MeetsCompletion)(NSError *error);
 #import "MGShoppingCartOrder.h"
 #import "MGCustomerCustomerList.h"
 #import "MGCustomerAddressList.h"
+#import "MGCustomerCustomerInfo.h"
 #import "MGCustomerAddressCreate.h"
 #import "MGCustomerAddressUpdate.h"
 #import "MGCustomerAddressDelete.h"
