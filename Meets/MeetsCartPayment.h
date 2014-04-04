@@ -19,6 +19,6 @@
 @property (nonatomic, strong) NSString *ccType;
 @property (nonatomic, strong) NSString *ccExpirationYear;
 @property (nonatomic, strong) NSString *ccExpirationMonth;
-@property (nonatomic, strong) NSString *payMillToken;
+@property (nonatomic, strong) NSString *token;
 
 @end

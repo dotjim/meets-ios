@@ -50,12 +50,12 @@
     NSMutableString *xml = [NSMutableString string];
     [xml appendFormat:@"<quoteId>%@</quoteId><method>", self.cartId];
     
-#warning Only supports Paymill method (magento module) in version 0.0.1:
+#warning Only supports token based payment methods (i.e: Stripe)
     for (MGMeetsCartPayment *paymentModel in arrayOfModels)
     {
-        if (paymentModel.payMillToken)
+        if (paymentModel.token)
         {
-            [xml appendFormat:@"<method>%@</method><paymill-payment-token-cc>%@</paymill-payment-token-cc>", paymentModel.code, paymentModel.payMillToken];
+            [xml appendFormat:@"<method>%@</method><payment-token-cc>%@</payment-token-cc>", paymentModel.code, paymentModel.token];
         }
         break;
     }
