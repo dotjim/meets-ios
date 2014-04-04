@@ -55,7 +55,7 @@
     {
         if (paymentModel.token)
         {
-            [xml appendFormat:@"<method>%@</method><payment-token-cc>%@</payment-token-cc>", paymentModel.code, paymentModel.token];
+            [xml appendFormat:@"<method>%@</method><payment_token>%@</payment_token>", paymentModel.code, paymentModel.token];
         }
         break;
     }
