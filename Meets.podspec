@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Meets"
-  s.version      = "0.0.1-beta"
+  s.version      = "0.0.1-beta2"
   s.summary      = "Meets iOS is a native SDK designed to ease the communications between iOS mobile apps and Magento stores"
   s.description  = <<-DESC
                    Meets iOS is a native SDK designed to ease the communications between iOS mobile apps and Magento stores. It allows you to access Magento's data as if it were local data and hides the complexities of dealing with Magento's SOAP API directly.
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.platform = :ios, '7.0'
 
-  s.source       = { :git => "https://github.com/agilemonkeys/meets-ios.git", :tag => "0.0.1-beta" }
+  s.source       = { :git => "https://github.com/agilemonkeys/meets-ios.git", :tag => "v0.0.1-beta.2" }
   s.source_files  = "Meets/**/*.{h,m}"
 
   s.requires_arc = true
