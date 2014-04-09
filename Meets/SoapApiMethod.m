@@ -141,7 +141,7 @@
     {
         NSData *plainData = [[NSString stringWithFormat:@"%@:%@", manager.basicAuthUser, manager.basicAuthPassword] dataUsingEncoding:NSUTF8StringEncoding];
         NSString *base64String = [plainData base64EncodedStringWithOptions:0];
-        [request addValue:[NSString stringWithFormat:@"Basic '%@'", base64String] forHTTPHeaderField:@"Authorization"];
+        [request addValue:[NSString stringWithFormat:@"Basic %@", base64String] forHTTPHeaderField:@"Authorization"];
     }
     
     return request;
