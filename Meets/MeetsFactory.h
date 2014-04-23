@@ -28,6 +28,8 @@
 
 - (MeetsCategory *)makeCategoryWithId:(NSNumber *)theId;
 
+- (MeetsCategory *)makeCategoryWithDictionary:(NSDictionary *)theDictionary;
+
 
 #pragma mark - Carts
 

@@ -46,6 +46,10 @@ static MeetsFactory *shared = nil;
     @throw [Errors overrideException:NSStringFromSelector(_cmd)];
 }
 
+- (MeetsCategory *)makeCategoryWithDictionary:(NSDictionary *)theDictionary
+{
+    @throw [Errors overrideException:NSStringFromSelector(_cmd)];
+}
 
 #pragma mark - Carts
 
