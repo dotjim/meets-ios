@@ -30,6 +30,28 @@
     return [[MGMeetsCategory alloc] initWithId:theId];
 }
 
+- (MeetsCategory *)makeCategoryWithDictionary:(NSDictionary *)theDictionary
+{
+    MGMeetsCategory *aCategory = [[MGMeetsCategory alloc] initWithId:[theDictionary valueForKey:@"objectId"]];
+    aCategory.parentId = [theDictionary valueForKey:@"parentId"];
+    aCategory.name = [[theDictionary valueForKey:@"name"] capitalizedString];
+    aCategory.isActive = [theDictionary valueForKey:@"isActive"];
+    aCategory.position = [theDictionary valueForKey:@"position"];
+    aCategory.level = [theDictionary valueForKey:@"level"];
+    
+    NSArray *childrenDictionaries = [theDictionary objectForKey:@"children"];
+    NSMutableArray *childrenCategories = [[NSMutableArray alloc] initWithCapacity:9];
+    if ([childrenDictionaries count] > 0) {
+        for (NSDictionary *anotherCategory in childrenDictionaries) {
+            MeetsCategory *aChildCategory = [self makeCategoryWithDictionary:anotherCategory];
+            [childrenCategories addObject:aChildCategory];
+        }
+    }
+    
+    aCategory.children = childrenCategories;
+    
+    return aCategory;
+}
 
 #pragma mark - Carts
 

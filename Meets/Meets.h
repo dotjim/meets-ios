@@ -130,4 +130,14 @@ typedef void(^MeetsCompletion)(NSError *error);
           basicAuthUser:(NSString *)serverUser
       basicAuthPassword:(NSString *)serverPassword;
 
++ (void)initWithFactory:(MeetsFactory *)factory
+                hostUrl:(NSString *)url
+            soapApiUser:(NSString *)apiUser
+        soapApiPassword:(NSString *)apiPassword
+                storeId:(NSString *)storeId
+              websiteId:(NSString *)websiteId
+          basicAuthUser:(NSString *)serverUser
+      basicAuthPassword:(NSString *)serverPassword
+            restBaseUrl:(NSString *)restBaseUrl;
+
 @end

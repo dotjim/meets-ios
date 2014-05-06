@@ -18,7 +18,7 @@ static const NSString *kSoapBaseUrlSuffix = @"/api/v2_soap/";
             soapApiUser:(NSString *)apiUser
         soapApiPassword:(NSString *)apiPassword
 {
-    [Meets initWithFactory:factory hostUrl:url soapApiUser:apiUser soapApiPassword:apiPassword storeId:nil websiteId:nil basicAuthUser:nil basicAuthPassword:nil];
+    [Meets initWithFactory:factory hostUrl:url soapApiUser:apiUser soapApiPassword:apiPassword storeId:nil websiteId:nil basicAuthUser:nil basicAuthPassword:nil restBaseUrl:[Meets restBaseUrlWithHostUrl:url]];
 }
 
 
@@ -29,9 +29,8 @@ static const NSString *kSoapBaseUrlSuffix = @"/api/v2_soap/";
                 storeId:(NSString *)storeId
               websiteId:(NSString *)websiteId
 {
-    [Meets initWithFactory:factory hostUrl:url soapApiUser:apiUser soapApiPassword:apiPassword storeId:storeId websiteId:websiteId basicAuthUser:nil basicAuthPassword:nil];
+    [Meets initWithFactory:factory hostUrl:url soapApiUser:apiUser soapApiPassword:apiPassword storeId:storeId websiteId:websiteId basicAuthUser:nil basicAuthPassword:nil restBaseUrl:[Meets restBaseUrlWithHostUrl:url]];
 }
-
 
 + (void)initWithFactory:(MeetsFactory *)factory
                 hostUrl:(NSString *)url
@@ -42,9 +41,22 @@ static const NSString *kSoapBaseUrlSuffix = @"/api/v2_soap/";
           basicAuthUser:(NSString *)serverUser
       basicAuthPassword:(NSString *)serverPassword
 {
+    [Meets initWithFactory:factory hostUrl:url soapApiUser:apiUser soapApiPassword:apiPassword storeId:storeId websiteId:websiteId basicAuthUser:serverUser basicAuthPassword:serverPassword restBaseUrl:[Meets restBaseUrlWithHostUrl:url]];
+}
+
++ (void)initWithFactory:(MeetsFactory *)factory
+                hostUrl:(NSString *)url
+            soapApiUser:(NSString *)apiUser
+        soapApiPassword:(NSString *)apiPassword
+                storeId:(NSString *)storeId
+              websiteId:(NSString *)websiteId
+          basicAuthUser:(NSString *)serverUser
+      basicAuthPassword:(NSString *)serverPassword
+            restBaseUrl:(NSString *)restBaseUrl
+{
     [MeetsFactory initWithFactory:factory];
     
-    [MeetsRestSessionManager initWithBaseUrl:[Meets restBaseUrlWithHostUrl:url] storeId:storeId websiteId:websiteId basicAuthUser:serverUser basicAuthPassword:serverPassword];
+    [MeetsRestSessionManager initWithBaseUrl:restBaseUrl storeId:storeId websiteId:websiteId basicAuthUser:serverUser basicAuthPassword:serverPassword];
     
     [MeetsSoapSessionManager initWithBaseUrl:[Meets soapBaseUrlWithHostUrl:url] storeId:storeId websiteId:websiteId soapApiUser:apiUser soapApiPassword:apiPassword basicAuthUser:serverUser basicAuthPassword:serverPassword];
 }
