@@ -31,6 +31,8 @@
 		1C4704DE18BE00890085A921 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C4704DC18BE00890085A921 /* InfoPlist.strings */; };
 		1C4704E018BE00890085A921 /* MeetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4704DF18BE00890085A921 /* MeetsTests.m */; };
 		1C7A8DA718C10CB80022A936 /* MeetsGenericModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A8DA618C10CB80022A936 /* MeetsGenericModel.m */; };
+		1C8EBFC1191E45D6009D8589 /* MGProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8EBFC0191E45D6009D8589 /* MGProduct.m */; };
+		1C8EBFC2191E4622009D8589 /* MGProduct.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C8EBFBF191E45D6009D8589 /* MGProduct.h */; };
 		1CA3ACF018E5B44B00046319 /* MGCustomerCustomerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3ACEF18E5B44B00046319 /* MGCustomerCustomerInfo.m */; };
 		1CA3ACF118E5B49700046319 /* MGCustomerCustomerInfo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CA3ACEE18E5B44B00046319 /* MGCustomerCustomerInfo.h */; };
 		1CB6EA7618D10C6300923773 /* Meets.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C4704C818BE00880085A921 /* Meets.h */; };
@@ -237,6 +239,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				1C8EBFC2191E4622009D8589 /* MGProduct.h in CopyFiles */,
 				1CA3ACF118E5B49700046319 /* MGCustomerCustomerInfo.h in CopyFiles */,
 				1CB6EA7618D10C6300923773 /* Meets.h in CopyFiles */,
 				1CB6EA7718D10C6300923773 /* MeetsRestSessionManager.h in CopyFiles */,
@@ -348,6 +351,8 @@
 		1C4704DF18BE00890085A921 /* MeetsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetsTests.m; sourceTree = "<group>"; };
 		1C7A8DA518C10CB80022A936 /* MeetsGenericModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetsGenericModel.h; sourceTree = "<group>"; };
 		1C7A8DA618C10CB80022A936 /* MeetsGenericModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetsGenericModel.m; sourceTree = "<group>"; };
+		1C8EBFBF191E45D6009D8589 /* MGProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGProduct.h; sourceTree = "<group>"; };
+		1C8EBFC0191E45D6009D8589 /* MGProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGProduct.m; sourceTree = "<group>"; };
 		1CA3ACEE18E5B44B00046319 /* MGCustomerCustomerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCustomerCustomerInfo.h; sourceTree = "<group>"; };
 		1CA3ACEF18E5B44B00046319 /* MGCustomerCustomerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCustomerCustomerInfo.m; sourceTree = "<group>"; };
 		1CF7AB8818BE0B8100B757EB /* MeetsRestSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetsRestSessionManager.h; sourceTree = "<group>"; };
@@ -682,6 +687,8 @@
 			children = (
 				1CF7ABBA18BE0C2A00B757EB /* RestApiMethod.h */,
 				1CF7ABBB18BE0C2B00B757EB /* RestApiMethod.m */,
+				1C8EBFBF191E45D6009D8589 /* MGProduct.h */,
+				1C8EBFC0191E45D6009D8589 /* MGProduct.m */,
 				1CF7ABBC18BE0C2B00B757EB /* MGProducts.h */,
 				1CF7ABBD18BE0C2B00B757EB /* MGProducts.m */,
 			);
@@ -1109,6 +1116,7 @@
 				1CF7AC0F18BE0C5400B757EB /* MGCatalogProductInfo.m in Sources */,
 				1CF7ABB818BE0C0600B757EB /* ApiMethod.m in Sources */,
 				1CF7AC0718BE0C5400B757EB /* MGCustomerCustomerList.m in Sources */,
+				1C8EBFC1191E45D6009D8589 /* MGProduct.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
