@@ -7,8 +7,9 @@
 //
 
 #import "RestApiMethod.h"
-#import "MGProduct.h"
 
-@interface MGProducts : MGProduct
+@interface MGProduct : RestApiMethod
+
+- (id)mapResponseToModelObjectWithResponse:(id)responseObject;
 
 @end

@@ -47,6 +47,7 @@ typedef void(^MeetsCompletion)(NSError *error);
 #import "ApiMethod.h"
 #import "RestApiMethod.h"
 #import "SoapApiMethod.h"
+#import "MGProduct.h"
 #import "MGProducts.h"
 #import "MGLogin.h"
 #import "MGCatalogCategory.h"

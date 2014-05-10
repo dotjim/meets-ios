@@ -12,7 +12,7 @@
 
 - (void)fetchWithCompletion:(MeetsCompletion)completion
 {
-    MGProducts *productsMethod = [MGProducts new];
+    MGProduct *productsMethod = [MGProduct new];
     [productsMethod runWithParams:@[self.objectId] filters:nil completion:^(id responseObject, NSError *error) {
         if (!error)
             [self fillWithModel:responseObject];
