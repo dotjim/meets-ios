@@ -83,7 +83,7 @@
             if (response)
             {
                 manager.apiSessionID = (NSString *)response;
-                [self runWithParams:paramsObject filters:nil completion:completion];
+                [self runMethod:method withParams:paramsObject completion:completion];
             }
             else
                 completion(nil, [self emptyResponseError]);
