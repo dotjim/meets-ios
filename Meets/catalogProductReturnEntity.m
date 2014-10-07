@@ -85,7 +85,7 @@
                 else if ( ([[array objectAtIndex:i0] objectForKey:@"nodeContent"] !=nil) &&  ([[[array objectAtIndex:i0]objectForKey:@"nodeName"]caseInsensitiveCompare:@"description"]==NSOrderedSame)){
                     NSString* nodeContentValue = [[NSString alloc] initWithString:[[array objectAtIndex:i0] objectForKey:@"nodeContent"]];
                     if (nodeContentValue !=nil)
-                        [self setDescription:nodeContentValue];
+                        [self setDesc:nodeContentValue];
                 }
                 else if ( ([[array objectAtIndex:i0] objectForKey:@"nodeContent"] !=nil) &&  ([[[array objectAtIndex:i0]objectForKey:@"nodeName"]caseInsensitiveCompare:@"short_description"]==NSOrderedSame)){
                     NSString* nodeContentValue = [[NSString alloc] initWithString:[[array objectAtIndex:i0] objectForKey:@"nodeContent"]];
@@ -278,8 +278,8 @@
     if (self.name != nil) {
         [nsString appendFormat:@"<name>%@</name>" , [self name]];
     }
-    if (self.description != nil) {
-        [nsString appendFormat:@"<description>%@</description>" , [self description]];
+    if (self.desc != nil) {
+        [nsString appendFormat:@"<description>%@</description>" , [self desc]];
     }
     if (self.short_description != nil) {
         [nsString appendFormat:@"<short_description>%@</short_description>" , [self short_description]];
@@ -387,7 +387,7 @@
         self.updated_at = [decoder decodeObjectForKey:@"updated_at"];
         self.type_id = [decoder decodeObjectForKey:@"type_id"];
         self.name = [decoder decodeObjectForKey:@"name"];
-        self.description = [decoder decodeObjectForKey:@"description"];
+        self.desc = [decoder decodeObjectForKey:@"desc"];
         self.short_description = [decoder decodeObjectForKey:@"short_description"];
         self.weight = [decoder decodeObjectForKey:@"weight"];
         self.status = [decoder decodeObjectForKey:@"status"];
@@ -426,7 +426,7 @@
     [encoder encodeObject:self.updated_at forKey:@"updated_at"];
     [encoder encodeObject:self.type_id forKey:@"type_id"];
     [encoder encodeObject:self.name forKey:@"name"];
-    [encoder encodeObject:self.description forKey:@"description"];
+    [encoder encodeObject:self.desc forKey:@"desc"];
     [encoder encodeObject:self.short_description forKey:@"short_description"];
     [encoder encodeObject:self.weight forKey:@"weight"];
     [encoder encodeObject:self.status forKey:@"status"];
@@ -485,8 +485,8 @@
     NSString *copy10 = [self.name copy];
     finalCopy.name = copy10;
     
-    NSString *copy11 = [self.description copy];
-    finalCopy.description = copy11;
+    NSString *copy11 = [self.desc copy];
+    finalCopy.desc = copy11;
     
     NSString *copy12 = [self.short_description copy];
     finalCopy.short_description = copy12;

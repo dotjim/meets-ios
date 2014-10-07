@@ -51,7 +51,7 @@
         cartItem.productId = @(itemEntity.product_id.integerValue);
         cartItem.productSku = itemEntity.sku;
         cartItem.name = itemEntity.name;
-        cartItem.description = itemEntity.description;
+        cartItem.desc = itemEntity.desc;
         cartItem.quantity = @(itemEntity.qty);
         cartItem.relatedProduct = nil;
         cartItem.price = @(itemEntity.price);

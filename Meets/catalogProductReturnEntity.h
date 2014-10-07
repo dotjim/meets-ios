@@ -29,7 +29,7 @@
 @property (nonatomic, copy) NSString *updated_at;
 @property (nonatomic, copy) NSString *type_id;
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *description;
+@property (nonatomic, copy) NSString *desc;
 @property (nonatomic, copy) NSString *short_description;
 @property (nonatomic, copy) NSString *weight;
 @property (nonatomic, copy) NSString *status;

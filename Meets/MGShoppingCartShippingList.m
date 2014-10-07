@@ -65,7 +65,7 @@
         shippingModel.carrierCode = anObject.carrier;
         shippingModel.carrierTitle = anObject.carrier_title;
         shippingModel.title = anObject.method_title;
-        shippingModel.description = anObject.method_description;
+        shippingModel.desc = anObject.method_description;
         shippingModel.price = @(anObject.price);
         
         [shippingArray addObject:shippingModel];

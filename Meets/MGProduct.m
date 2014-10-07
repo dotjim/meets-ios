@@ -30,7 +30,7 @@
 {
     MeetsProduct *productModel = [[MeetsFactory shared] makeProductWithId:@([responseObject[@"entity_id"] integerValue])];
     productModel.name = responseObject[@"name"];
-    productModel.description = responseObject[@"short_description"];
+    productModel.desc = responseObject[@"short_description"];
     productModel.imageURL = responseObject[@"image_url"];
     productModel.price = responseObject[@"final_price_with_tax"];
     productModel.sku = responseObject[@"sku"];

@@ -15,7 +15,7 @@
 @property (nonatomic, strong) NSString *carrierCode;
 //@property (nonatomic, strong) NSString *method;
 @property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *description;
+@property (nonatomic, strong) NSString *desc;
 @property (nonatomic, strong) NSNumber *price;
 
 @end

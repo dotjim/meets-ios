@@ -52,7 +52,7 @@
         productModel.type = productEntity.type_id;
         productModel.sku = productEntity.sku;
         productModel.name = productEntity.name;
-        productModel.description = productEntity.short_description;
+        productModel.desc = productEntity.short_description;
         productModel.price = [NSNumber numberWithFloat:[productEntity.price floatValue]];
         
         NSMutableDictionary *additionalAttributes = [NSMutableDictionary dictionary];

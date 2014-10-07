@@ -27,7 +27,7 @@
 @property BOOL is_virtualSpecified;
 @property (nonatomic, copy) NSString *sku;
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *description;
+@property (nonatomic, copy) NSString *desc;
 @property (nonatomic, copy) NSString *applied_rule_ids;
 @property (nonatomic, copy) NSString *additional_data;
 @property (nonatomic, copy) NSString *free_shipping;

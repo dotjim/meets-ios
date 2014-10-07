@@ -73,7 +73,7 @@
                 else if ( ([[array objectAtIndex:i0] objectForKey:@"nodeContent"] !=nil) &&  ([[[array objectAtIndex:i0]objectForKey:@"nodeName"]caseInsensitiveCompare:@"description"]==NSOrderedSame)){
                     NSString* nodeContentValue = [[NSString alloc] initWithString:[[array objectAtIndex:i0] objectForKey:@"nodeContent"]];
                     if (nodeContentValue !=nil)
-                        [self setDescription:nodeContentValue];
+                        [self setDesc:nodeContentValue];
                 }
                 else if ( ([[array objectAtIndex:i0] objectForKey:@"nodeContent"] !=nil) &&  ([[[array objectAtIndex:i0]objectForKey:@"nodeName"]caseInsensitiveCompare:@"applied_rule_ids"]==NSOrderedSame)){
                     NSString* nodeContentValue = [[NSString alloc] initWithString:[[array objectAtIndex:i0] objectForKey:@"nodeContent"]];
@@ -418,8 +418,8 @@
     if (self.name != nil) {
         [nsString appendFormat:@"<name>%@</name>" , [self name]];
     }
-    if (self.description != nil) {
-        [nsString appendFormat:@"<description>%@</description>" , [self description]];
+    if (self.desc != nil) {
+        [nsString appendFormat:@"<description>%@</description>" , [self desc]];
     }
     if (self.applied_rule_ids != nil) {
         [nsString appendFormat:@"<applied_rule_ids>%@</applied_rule_ids>" , [self applied_rule_ids]];
@@ -533,7 +533,7 @@
         self.is_virtualSpecified = [decoder decodeInt32ForKey:@"is_virtualSpecified"];
         self.sku = [decoder decodeObjectForKey:@"sku"];
         self.name = [decoder decodeObjectForKey:@"name"];
-        self.description = [decoder decodeObjectForKey:@"description"];
+        self.desc = [decoder decodeObjectForKey:@"desc"];
         self.applied_rule_ids = [decoder decodeObjectForKey:@"applied_rule_ids"];
         self.additional_data = [decoder decodeObjectForKey:@"additional_data"];
         self.free_shipping = [decoder decodeObjectForKey:@"free_shipping"];
@@ -622,7 +622,7 @@
     [encoder encodeInt32:self.is_virtualSpecified forKey:@"is_virtualSpecified"];
     [encoder encodeObject:self.sku forKey:@"sku"];
     [encoder encodeObject:self.name forKey:@"name"];
-    [encoder encodeObject:self.description forKey:@"description"];
+    [encoder encodeObject:self.desc forKey:@"desc"];
     [encoder encodeObject:self.applied_rule_ids forKey:@"applied_rule_ids"];
     [encoder encodeObject:self.additional_data forKey:@"additional_data"];
     [encoder encodeObject:self.free_shipping forKey:@"free_shipping"];
@@ -729,8 +729,8 @@
     NSString *copy10 = [self.name copy];
     finalCopy.name = copy10;
     
-    NSString *copy11 = [self.description copy];
-    finalCopy.description = copy11;
+    NSString *copy11 = [self.desc copy];
+    finalCopy.desc = copy11;
     
     NSString *copy12 = [self.applied_rule_ids copy];
     finalCopy.applied_rule_ids = copy12;

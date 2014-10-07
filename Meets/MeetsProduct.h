@@ -13,7 +13,7 @@
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSString *sku;
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *description;
+@property (nonatomic, strong) NSString *desc;
 @property (nonatomic, strong) NSNumber *price;
 @property (nonatomic, strong) NSString *imageURL;
 @property (nonatomic, strong) NSDictionary *images;
